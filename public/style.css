@@ -1,0 +1,82 @@
+.nav{
+
+    display:flex;
+    justify-content:space-between;
+}
+
+.abc{
+    display:flex;
+    padding:10px;
+}
+.Header{
+     border:2px solid red;
+     background-color:aqua;
+}
+.form{
+    /* grid creates a grid of row and column */
+    display:grid;
+    grid-template:40px 40px/1fr 1fr;
+    /* gap property to spread things out a little bit */
+    gap:17px;
+}
+.form-button{
+    /* column start from very begining to the end */
+    grid-column: 1/-1;
+    border-radius: 5px;
+    border: 2px solid red;
+    background: plum;
+    color: white;
+}
+.form >input{
+    border-radius: 5px;
+    border: 2px solid gainsboro;
+    /* background: wheat; */
+}
+
+.Main{
+    padding: 36px;
+}
+
+.memeImage{
+    align-self: center;
+    max-width: 100%;
+    border-radius: 3px;
+}
+
+.ImagePositioning
+{
+    position: relative;
+}
+
+.meme--text {
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 15px 0;
+    padding: 0 5px;
+    font-family: impact, sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        -2px 0 0 #000,
+        2px 2px 5px #000;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+.top {
+    top: 0;
+}
